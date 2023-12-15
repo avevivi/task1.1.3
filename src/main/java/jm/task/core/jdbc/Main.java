@@ -14,12 +14,13 @@ public class Main {
 
         UserServiceImpl usi = new UserServiceImpl();
 
-        usi.createUsersTable();
+     /*   usi.createUsersTable();
         usi.saveUser("firstN", "firstLN", (byte) 25);
         usi.saveUser("secondN", "secondLN", (byte) 25);
         usi.saveUser("thirdN", "thirdLN", (byte) 25);
-        usi.saveUser("fourthN", "fourthLN", (byte) 25);
-        usi.cleanUsersTable();
-        usi.dropUsersTable();
+        usi.saveUser("fourthN", "fourthLN", (byte) 25);*/
+        usi.removeUserById(3);
+        /*usi.cleanUsersTable();
+        usi.dropUsersTable();*/
     }
 }

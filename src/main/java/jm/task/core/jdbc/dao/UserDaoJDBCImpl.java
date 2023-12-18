@@ -9,8 +9,7 @@ import java.util.List;
 
 public class UserDaoJDBCImpl implements UserDao {
 
-    //Создание таблицы для пользователей - не должно вызывать исключение, если такая таблица уже существует.
-    //Удаление таблицы для пользователей - не должно вызывать исключение, если таблица не существует.
+
 
     private static final String CREATE_TABLE_SQL = "CREATE TABLE IF NOT EXISTS users (id BIGINT NOT NULL PRIMARY KEY AUTO_INCREMENT, name VARCHAR(255) NOT NULL, last_name VARCHAR(255) NOT NULL, age TINYINT NOT NULL)";
     private static final String DROP_USERS_TABLE_SQL = "DROP TABLE IF EXISTS users";
@@ -21,7 +20,7 @@ public class UserDaoJDBCImpl implements UserDao {
 
 
     public UserDaoJDBCImpl() {
-        // has to be empty
+
     }
 
     public void createUsersTable() {

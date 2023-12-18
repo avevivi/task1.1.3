@@ -6,12 +6,8 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.query.Query;
-
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Queue;
+
 
 public class UserDaoHibernateImpl implements UserDao {
     private final SessionFactory sessionFactory;
